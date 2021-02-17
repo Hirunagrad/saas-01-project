@@ -1,5 +1,18 @@
-header{
-    background: lightblue;
-    display: flex;
-    justify-content: center;
+$primaryBtn: rgb(98, 106, 218);
+$textcolor: rgb(71, 10, 10);
+$content:"Hi";
+
+@import './header.scss';
+
+
+.contact button{
+
+    @include flexcenter;
+    background: $primaryBtn;
+
+    &:hover{
+        background: rgb(211, 68, 68);
+    }
+
 }
+
